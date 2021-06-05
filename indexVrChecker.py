@@ -17,16 +17,20 @@ SKU_STRINGS = [
     'sku_bs'
 ]
 
-# ===== DEFINE WHAT YOU WANT HERE =====
-# 0=full_kit, 1=partial_kit, 2=hmd, 3=knuckles, 4=bases
-# THESE MUST BE NUMBERS
+# ===== DEFINE WHAT YOU WANT IN THE LIST BELOW =====
+# (THESE MUST BE NUMBERS) (Uncomment the ones you want)
 
 WANTED_ITEMS = [
+    #0,
+    #1,
     2,
-    4
+    #3,
+    #4
 ]
 
-# ===== ===== =====
+# Remember: 0=full_kit, 1=partial_kit, 2=hmd, 3=knuckles, 4=bases 
+
+# ===== ===== ===== ===== ===== =====
 
 def check_available(btn_html, item_name):
     s = str(btn_html)
