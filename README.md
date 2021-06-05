@@ -25,7 +25,7 @@ This program is quite basic and was coded quickly. It will probably break if the
 
 `python.exe indexVrChecker.py --nopause` : execute the program *without pausing at the end*
 
-The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. The hardware package names are defined in the `SKU_STRINGS` list. 
+The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package.
 
 You *MUST* change the values in `WANTED_ITEMS` in order for this script to be useful to you.
 
