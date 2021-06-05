@@ -11,7 +11,7 @@ This program is quite rudimentary and was coded quickly. It will probably break 
 
 ## Requirements
 
-- Python 3
+- Python 3.x
 
 `pip install requests`
 
