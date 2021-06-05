@@ -1,4 +1,4 @@
-# Valve Index VR - Availability Checker
+# Valve Index VR - Store Availability Checker
 A Python script which checks to see if the Valve Index VR hardware products are currently available on Steam
 
 The script uses `requests` and `BeautifulSoup` Python classes/libraries to parse HTML from the Steam store to see if the Index VR products are available.
