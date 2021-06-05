@@ -33,8 +33,8 @@ You *MUST* change the values in `WANTED_ITEMS` in order for this script to be us
 
 `1 : HMD + Controllers Kit`
 
-`2: HMD Only`
+`2 : HMD Only`
 
-`3: Controllers Only`
+`3 : Controllers Only`
 
-`4: Base Stations Only`
+`4 : Base Stations Only`
