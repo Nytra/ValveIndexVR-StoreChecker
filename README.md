@@ -29,12 +29,12 @@ The script will check *only* for the products which are hard-coded in the `WANTE
 
 You *MUST* change the values in `WANTED_ITEMS` in order for this script to be useful to you.
 
-`0 : Full Kit (sku_full_kit)`
+`0 : Full Kit`
 
-`1 : HMD+Controllers Kit (sku_partial_kit)`
+`1 : HMD + Controllers Kit`
 
-`2: HMD Only (sku_hmd)`
+`2: HMD Only`
 
-`3: Controllers Only (sku_knuckles)`
+`3: Controllers Only`
 
-`4: Base Stations (sku_bs)`
+`4: Base Stations Only`
