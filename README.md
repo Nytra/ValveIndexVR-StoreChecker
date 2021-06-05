@@ -17,7 +17,7 @@ This program is quite rudimentary and was coded quickly. It will probably break 
 
 `pip install bs4`
 
-- Windows operating system (for `winsound` library)
+- Windows operating system (for `winsound` module)
 
 ## Usage
 
