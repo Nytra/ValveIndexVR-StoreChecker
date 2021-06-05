@@ -5,19 +5,19 @@ The script uses the `requests` and `bs4` (BeautifulSoup) Python packages to read
 
 You can use Windows Task Scheduler to make this script run at set intervals (eg: every 15 minutes) so that you will always be one of the first to know when the VR hardware becomes available.
 
-There will be a loud and obnoxious beeping alarm that goes off if any of your desired products are available. There will be a total of thirty 1-second-duration tones with a 1-second-duration delay between them.
+There will be a loud and obnoxious beeping alarm that goes off if any of your desired products are available. There will be a total of fifty 1-second-duration tones with a 1-second-duration delay between them. 
 
-This program is quite rudimentary and was coded quickly. It will probably break if the HTML from the store ever changes. 
+This program is quite basic and was coded quickly. It will probably break if the HTML from the store ever changes. It works for now, though.
 
 ## Requirements
 
 - Python 3.x
 
+- Windows operating system (for `winsound` module)
+
 `pip install requests`
 
 `pip install bs4`
-
-- Windows operating system (for `winsound` module)
 
 ## Usage
 
