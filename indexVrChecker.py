@@ -5,7 +5,11 @@ import requests
 import datetime
 from sys import argv
 import time
-import winsound
+#import random
+import os
+#import winsound
+
+import simpleaudio
 
 HEADSET_URL = 'https://store.steampowered.com/app/1059530/Valve_Index_Headset/'
 
@@ -32,6 +36,18 @@ WANTED_ITEMS = [
 
 # ===== ===== ===== ===== ===== =====
 
+#alert_sound = simpleaudio.WaveObject.from_wave_file("Blip_Select11.wav")
+#print(os.getcwd())
+
+scriptpath = os.path.realpath(__file__)
+dirpath = os.path.split(scriptpath)[0]
+
+alert_sound_1 = simpleaudio.WaveObject.from_wave_file(dirpath + "\\indexVrSfx.wav")
+
+def play_sound():
+    alert_sound_1.play()
+
+
 def check_available(btn_html, item_name):
     s = str(btn_html)
 
@@ -40,8 +56,9 @@ def check_available(btn_html, item_name):
 
         # make loud sounds obnoxiously to alert the user!
         print("ALARM ACTIVATING!")
-        for _ in range(50):
-            winsound.Beep(600, 1000)
+        for _ in range(30):
+            #winsound.Beep(600, 1000)
+            play_sound()
             time.sleep(1)
 
         return True
@@ -99,14 +116,16 @@ def main():
             print("Items are available! Pausing application.\n")
             input("Press enter to quit.")
         else:
-            print("Nothing available. Sleeping for 3 seconds before exit.")
+            print("Nothing available. Sleeping for 3 seconds before exit.\n")
             time.sleep(3)
-            
+
 
 if __name__ == "__main__":
     print("\nValve Index VR products Availability checker\n")
     now = datetime.datetime.now()
     print(now.date(), str(now.time()).split(".")[0])
     print()
+    
+    #play_sound()
 
     main()
