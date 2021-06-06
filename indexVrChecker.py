@@ -42,7 +42,7 @@ WANTED_ITEMS = [
 scriptpath = os.path.realpath(__file__)
 dirpath = os.path.split(scriptpath)[0]
 
-alert_sound_1 = simpleaudio.WaveObject.from_wave_file(dirpath + "\\indexVrSfx.wav")
+alert_sound_1 = simpleaudio.WaveObject.from_wave_file(dirpath + os.sep + "indexVrSfx.wav")
 
 def play_sound():
     alert_sound_1.play()
