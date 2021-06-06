@@ -21,6 +21,8 @@ This program is quite basic and was coded quickly. It will probably break if the
 
 ## Usage
 
+Extract contents of repository zipped file to a folder of your choice.
+
 `python.exe indexVrChecker.py` : execute the program normally
 
 `python.exe indexVrChecker.py --nopause` : execute the program *without pausing at the end*
