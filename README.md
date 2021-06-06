@@ -13,8 +13,6 @@ This program is quite basic and was coded quickly. It will probably break if the
 
 - Python 3.x
 
-- Windows operating system (for `winsound` module)
-
 `pip install requests`
 
 `pip install bs4`
