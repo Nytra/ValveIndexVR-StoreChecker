@@ -9,6 +9,8 @@ There will be a loud and obnoxious beeping alarm that goes off if any of your de
 
 This program is quite basic and was coded quickly. It will probably break if the HTML from the store ever changes. It works for now, though.
 
+This script was made for personal use. I test it a lot on my PC, and will continue to update it here whenever I fix bugs or add new features.
+
 ## Requirements
 
 - Python 3.x.x
