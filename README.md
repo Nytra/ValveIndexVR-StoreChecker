@@ -5,9 +5,7 @@ The script uses the `requests` and `bs4` (BeautifulSoup) Python packages to read
 
 You can use Windows Task Scheduler to make this script run at set intervals (eg: every 15 minutes) so that you will always be one of the first to know when the VR hardware becomes available.
 
-There will be a loud and obnoxious beeping alarm that goes off if any of your desired products are available. There will be a total of fifty 1-second-duration tones with a 1-second-duration delay between them. 
-
-This program is quite basic and was coded quickly. It will probably break if the HTML from the store ever changes. It works for now, though.
+There will be a loud and obnoxious alarm sound if any of your desired products are available. It will play the indexVrSfx.wav audio sample 30 times with a 1 second delay between each play.
 
 This script was made for personal use. I test it a lot on my PC, and will continue to update it here whenever I fix bugs or add new features.
 
