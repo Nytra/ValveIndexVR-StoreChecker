@@ -27,11 +27,13 @@ Extract contents of repository zipped file to a folder of your choice.
 
 `python.exe indexVrChecker.py --nopause` : execute the program *without pausing at the end*
 
+`python.exe indexVrChecker.py --noalarm --checkall` : execute the program *without activating the alarm* and *check for all items*
+
 `pythonw.exe indexVrChecker.py` : executes the program in the background (does not open console window, still makes sound)
 
-The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package.
+The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. This feature is ignored when `--checkall` is used.
 
-You *MUST* change the values in `WANTED_ITEMS` in order for this script to be useful to you.
+`WANTED_ITEMS` Item Reference:
 
 `0 : Full Kit`
 
