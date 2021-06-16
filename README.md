@@ -13,6 +13,8 @@ This script was made for personal use. I test it a lot on my PC, and will contin
 
 - Python 3.x.x
 
+Type these in the terminal:
+
 `pip install requests`
 
 `pip install bs4`
