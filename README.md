@@ -21,7 +21,7 @@ This script was made for personal use. I test it a lot on my PC, and will contin
 
 ## Usage
 
-Extract contents of repository zipped file to a folder of your choice.
+Extract contents of repository zipped file to a folder of your choice. Then open a terminal window:
 
 `python.exe indexVrChecker.py` : execute the program normally
 
@@ -33,7 +33,7 @@ Extract contents of repository zipped file to a folder of your choice.
 
 The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. This feature is ignored when `--checkall` is used.
 
-`WANTED_ITEMS` Item Reference:
+Item Reference:
 
 `0 : Full Kit`
 
