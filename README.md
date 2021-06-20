@@ -7,6 +7,8 @@ You can use Windows Task Scheduler to make this script run at set intervals (eg:
 
 There will be a loud and obnoxious alarm sound if any of your desired products are available. It will play the indexVrSfx.wav audio sample 30 times with a 1 second delay between each play.
 
+The script will also log the result of each check in the file `indexVrResults.dat`, in plain-text. You can use this file to look at previous results, just to make sure you didn't miss any availabilities.
+
 This script was made for personal use. I test it a lot on my PC, and will continue to update it here whenever I fix bugs or add new features.
 
 ## Requirements
