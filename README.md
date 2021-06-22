@@ -11,7 +11,7 @@ The script will also log the result of each check in the file `indexVrResults.da
 
 The format of the log file is:
 
-`Date[YYYY-MM-DD] Time[HH:MM:SS] ItemsChecked[CUR_N/MAX_N] ItemIndex ItemName Result`.
+`Date[YYYY-MM-DD] Time[HH:MM:SS] ItemsChecked[CUR_N/MAX_N] ItemIndex[i=0-4] ItemName Result`.
 
 This script was made for personal use. I test it a lot on my PC, and will continue to update it here whenever I fix bugs or add new features.
 
