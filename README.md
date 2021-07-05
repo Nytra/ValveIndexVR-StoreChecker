@@ -3,7 +3,7 @@ A Python script which checks to see if the Valve Index VR hardware products are 
 
 The script uses the `requests` and `bs4` (BeautifulSoup) Python packages to read HTML from the Steam store to see if the Index VR products are available. It also uses `simpleaudio` to play sound. You must install these with `pip` for the script to work.
 
-You can use Windows Task Scheduler to make this script run at set intervals (eg: every 15 minutes) so that you will always be one of the first to know when the VR hardware becomes available.
+You can use Windows Task Scheduler to make this script run at set intervals (e.g.: every 15 minutes) so that you will always be one of the first to know when the VR hardware becomes available.
 
 There will be a loud and obnoxious alarm sound if any of your desired products are available. It will play the indexVrSfx.wav audio sample 30 times with a 1 second delay between each play.
 
