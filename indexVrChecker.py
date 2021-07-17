@@ -41,22 +41,33 @@ WANTED_ITEMS = [
 
 # ===== ===== ===== ===== ===== =====
 
+def check_arg(arg):
+    if len(argv) > 1 and arg in argv[1:]:
+        return True
+    return False
+    
+
+# Get path to script directory
 scriptpath = os.path.realpath(__file__)
 dirpath = os.path.split(scriptpath)[0]
 
-alert_sound_1 = simpleaudio.WaveObject.from_wave_file(dirpath + os.sep + "indexVrSfx.wav")
+# Attempt to load alarm sound effect
+if not check_arg('--noalarm'):
+    try:
+        alert_sound_1 = simpleaudio.WaveObject.from_wave_file(dirpath + os.sep + "indexVrSfx.wav")
+    except FileNotFoundError:
+        print("error: unable to locate indexVrSfx.wav - alarm will be disabled.")
+        alert_sound_1 = None
+else:
+    alert_sound_1 = None
 
 # === End of Globals and constants ===
 
 # === Utility functions ===
 
 def play_sound():
-    alert_sound_1.play()
-
-def check_arg(arg):
-    if len(argv) > 1 and arg in argv[1:]:
-        return True
-    return False
+    if alert_sound_1 != None:
+        alert_sound_1.play()
 
 def check_available(btn_html, item_name):
     s = str(btn_html)
