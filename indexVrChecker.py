@@ -141,13 +141,17 @@ def main():
 
             writefile.close()
 
-            if result == True and check_arg('--noalarm') == False:
+            if result == True and check_arg('--noalarm') == False and alert_sound_1 != None:
 
                 # make loud sounds obnoxiously to alert the user!
                 print("ALARM ACTIVATING!")
                 for _ in range(30):
                     play_sound()
                     time.sleep(1)
+
+            elif alert_sound_1 == None:
+                #print("*Skipped alarm*")
+                pass
             
             items_checked += 1
 
