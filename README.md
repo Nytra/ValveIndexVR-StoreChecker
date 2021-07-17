@@ -45,7 +45,7 @@ Extract contents of repository zipped file to a folder of your choice. Then open
 
 The script will check *only* for the item id's which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4], which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. This list is ignored when `--checkall` is used.
 
-Item Reference:
+Item Reference (Correct as of July 2021):
 
 `0 : Full Kit`
 
