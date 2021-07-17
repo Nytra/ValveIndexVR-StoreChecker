@@ -5,21 +5,23 @@ The script uses the `requests` and `bs4` (BeautifulSoup) Python packages to read
 
 You can use Windows Task Scheduler to make this script run at set intervals (e.g.: every 15 minutes) so that you will always be one of the first to know when the VR hardware becomes available.
 
-There will be a loud and obnoxious alarm sound if any of your desired products are available. It will play the indexVrSfx.wav audio sample 30 times with a 1 second delay between each play.
+There will be a loud and obnoxious alarm if any of your desired products are available. It will play the indexVrSfx.wav audio sample 30 times with a 1 second delay between each play.
 
-The script will also log the result of each check in the file `indexVrResults.dat`, in plain-text. You can use this file to look at previous results, just to make sure you didn't miss any availabilities. 
+The script will log the result of each check in the file `indexVrResults.dat`, in plain-text. You can use this file to look at previous results, just to make sure you didn't miss anything. 
 
 The format of the log file is:
 
-`Date[YYYY-MM-DD] Time[HH:MM:SS] ItemsChecked[CUR_N/MAX_N] ItemIndex[i=0-4] ItemName Result`.
+`Date[YYYY-MM-DD] Time[HH:MM:SS] ItemsChecked[CUR_N/MAX_N] ItemIndex[i=0-4] ItemName Result`
 
-This script was made for personal use. I test it a lot on my PC, and will continue to update it here whenever I fix bugs or add new features.
+Log example:
+
+`[2021-06-16] [16:50:35] 1/1 i=2 sku_hmd unavailable.`
 
 ## Requirements
 
-- Python 3.x.x
+- Python 3
 
-Type these in the terminal:
+Run these at command-line or terminal:
 
 `pip install requests`
 
@@ -29,7 +31,7 @@ Type these in the terminal:
 
 ## Usage
 
-Extract contents of repository zipped file to a folder of your choice. Then open a terminal window:
+Extract contents of repository zipped file to a folder of your choice. Then open a terminal:
 
 `python.exe indexVrChecker.py` : execute the program normally
 
@@ -41,7 +43,7 @@ Extract contents of repository zipped file to a folder of your choice. Then open
 
 ---
 
-The script will check *only* for the products which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4] which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. This feature is ignored when `--checkall` is used.
+The script will check *only* for the item id's which are hard-coded in the `WANTED_ITEMS` list. These values are the list indices [0-4], which correspond to the desired hardware. For example, an index of `1` corresponds to `'sku_partial_kit'` which is the HMD+Controller package. This list is ignored when `--checkall` is used.
 
 Item Reference:
 
