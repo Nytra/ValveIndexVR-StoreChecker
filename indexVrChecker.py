@@ -1,9 +1,13 @@
-# program to check if the Valve Index VR products are available on Steam
+""" indexVrChecker.py: Program to check if the Valve Index VR products are in-stock on Steam
 
-#   command-line args:
-#     --nopause : don't pause before program exit
-#     --noalarm : don't sound the alarm
-#     --checkall : check all sku purchase_options
+    Command-line args:
+        --nopause : don't pause before program exit
+        --noalarm : don't sound the alarm
+        --checkall : check all sku purchase options
+
+    Repository URL: https://github.com/Nytra/ValveIndexVR-StoreChecker
+
+"""
 
 from bs4 import BeautifulSoup
 import requests
